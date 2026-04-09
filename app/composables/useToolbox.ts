@@ -2,12 +2,15 @@ import { gsap } from "gsap";
 import { scramble } from "~/utils/scramble";
 
 export const categories = [
-  { label: "Frameworks",         tools: ["Vue.js", "Nuxt.js", "Astro.js"] },
-  { label: "Styling",            tools: ["Tailwind CSS", "GSAP", "GLSL / WebGL"] },
-  { label: "Libraries",          tools: ["Vitest", "Formkit", "Zod"] },
+  { label: "Frameworks", tools: ["Vue.js", "Nuxt.js", "Astro.js"] },
+  { label: "Styling", tools: ["Tailwind CSS", "GSAP", "Page Transitions"] },
+  { label: "Libraries", tools: ["Vitest", "Formkit", "Mapbox"] },
   { label: "Content Management", tools: ["Storyblok", "Sanity.io", "Webflow"] },
-  { label: "Design",             tools: ["Figma", "Design Systems", "Typografie"] },
-  { label: "Tooling",            tools: ["Supabase", "GitHub", "Tower", "Cursor", "Claude"] },
+  { label: "Design", tools: ["Figma", "Design Systems", "Typografie"] },
+  {
+    label: "Tooling",
+    tools: ["Supabase", "GitHub", "Tower", "Cursor", "Claude"],
+  },
 ];
 
 export function useToolbox() {
@@ -21,7 +24,8 @@ export function useToolbox() {
   function resolveEl(el: unknown): object | null {
     if (el && typeof el === "object") {
       if ("nodeType" in el) return el;
-      if ("$el" in el && el.$el && typeof el.$el === "object") return el.$el as object;
+      if ("$el" in el && el.$el && typeof el.$el === "object")
+        return el.$el as object;
     }
     return null;
   }
@@ -53,11 +57,34 @@ export function useToolbox() {
     gsap.killTweensOf([title, detail]);
 
     if (open) {
-      gsap.to(title, { fontSize: "clamp(1.2rem, 2.2vw, 1.8rem)", opacity: 1, x: 0, duration: 0.45, ease: "power3.out" });
-      gsap.to(detail, { height: (detail as HTMLElement).scrollHeight, opacity: 1, duration: 0.45, ease: "power3.out", delay: 0.05 });
+      gsap.to(title, {
+        fontSize: "clamp(1.2rem, 2.2vw, 1.8rem)",
+        opacity: 1,
+        x: 0,
+        duration: 0.45,
+        ease: "power3.out",
+      });
+      gsap.to(detail, {
+        height: (detail as HTMLElement).scrollHeight,
+        opacity: 1,
+        duration: 0.45,
+        ease: "power3.out",
+        delay: 0.05,
+      });
     } else {
-      gsap.to(title, { fontSize: "0.85rem", opacity: 0.2, x: 8, duration: 0.35, ease: "power2.in" });
-      gsap.to(detail, { height: 0, opacity: 0, duration: 0.3, ease: "power2.in" });
+      gsap.to(title, {
+        fontSize: "0.85rem",
+        opacity: 0.2,
+        x: 8,
+        duration: 0.35,
+        ease: "power2.in",
+      });
+      gsap.to(detail, {
+        height: 0,
+        opacity: 0,
+        duration: 0.3,
+        ease: "power2.in",
+      });
     }
   }
 
@@ -77,8 +104,10 @@ export function useToolbox() {
       if (!title) return;
       const isActive = activeIndex.value === j;
       const isHovered = j === i;
-      if (isHovered && !isActive) gsap.to(title, { opacity: 0.5, duration: 0.2, ease: "power2.out" });
-      else if (!isActive) gsap.to(title, { opacity: 0.08, duration: 0.2, ease: "power2.out" });
+      if (isHovered && !isActive)
+        gsap.to(title, { opacity: 0.5, duration: 0.2, ease: "power2.out" });
+      else if (!isActive)
+        gsap.to(title, { opacity: 0.08, duration: 0.2, ease: "power2.out" });
       else gsap.to(title, { opacity: 0.75, duration: 0.2, ease: "power2.out" });
     });
   }
@@ -86,7 +115,11 @@ export function useToolbox() {
   function onMouseLeave(_i: number) {
     titleRefs.value.forEach((title, j) => {
       if (!title) return;
-      gsap.to(title, { opacity: activeIndex.value === j ? 1 : 0.2, duration: 0.2, ease: "power2.in" });
+      gsap.to(title, {
+        opacity: activeIndex.value === j ? 1 : 0.2,
+        duration: 0.2,
+        ease: "power2.in",
+      });
     });
   }
 
@@ -111,5 +144,14 @@ export function useToolbox() {
     });
   });
 
-  return { categories, activeIndex, setTitleRef, setDetailRef, setToolRef, toggle, onMouseEnter, onMouseLeave };
+  return {
+    categories,
+    activeIndex,
+    setTitleRef,
+    setDetailRef,
+    setToolRef,
+    toggle,
+    onMouseEnter,
+    onMouseLeave,
+  };
 }

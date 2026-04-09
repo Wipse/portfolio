@@ -10,8 +10,10 @@ definePageMeta({
 
 usePageMeta({
   title: "Info — Studio Wisse",
-  description: "Over Wisse Heida — afgestudeerde CMD'er, frontend developer en designer gevestigd in Heerenveen.",
-  ogDescription: "Over Wisse Heida — frontend developer en designer gevestigd in Heerenveen.",
+  description:
+    "Over Wisse Heida — afgestudeerde CMD'er, frontend developer en designer gevestigd in Heerenveen.",
+  ogDescription:
+    "Over Wisse Heida — frontend developer en designer gevestigd in Heerenveen.",
 });
 
 const experience: ExperienceItem[] = [
@@ -28,7 +30,7 @@ const experience: ExperienceItem[] = [
   {
     organisation: "NHL Stenden Leeuwarden",
     role: "Communication & Multimedia Design",
-    period: "sep 2024 - jan 2025 · 5 maanden",
+    period: "sep 2021 - dec 2025 · 4 jr 3 mnd",
   },
 ];
 </script>
@@ -44,7 +46,7 @@ const experience: ExperienceItem[] = [
         >
           Ik ben Wisse Heida, een afgestudeerde Communication & Multimedia
           Design student van NHL Stenden Leeuwarden, gevestigd in Heerenveen. Ik
-          werk op het snijvlak van design en development — van interface design
+          werk op het snijvlak van design en development; van interface design
           tot interactieve webapplicaties.
         </p>
       </div>
@@ -56,10 +58,10 @@ const experience: ExperienceItem[] = [
         <p
           class="max-w-prose text-body-sm font-extralight leading-relaxed text-purple-100/60"
         >
-          Mijn focus ligt op het bouwen van doordachte digitale ervaringen — van
-          design systems en component libraries tot creatieve web-experimenten.
-          Ik werk voornamelijk met Vue.js / Nuxt, TailwindCSS en GSAP, en heb
-          een sterke affiniteit met typografie, animatie en interactieontwerp.
+          Momenteel ben ik veel bezig met het maken van websites met gekoppelde
+          CMS tools zoals Sanity.io. Hoewel ik al wat developerervaring heb, ben
+          ik de laatste mij meer gaan focussen op het creatieve gedeelte van
+          website's neerzetten, zoals de UX/UI designs.
         </p>
       </div>
     </div>
