@@ -22,11 +22,11 @@
   {
     "slug": "capellos",
     "name": "Capellos",
-    "description": "Intern component library en design system voor Skeps, inclusief documentatie en Storybook integratie.",
-    "tags": ["UX", "Design Systems"],
+    "description": "Webshop voor een beginnende onderneemster, waar oude kleding een nieuw leven krijgt door reperatie en geschilderde printjes",
+    "tags": ["Design", "Development", "CMS"],
     "externalUrl": null,
-    "disabledMessage": "Intern project",
-    "githubUrl": null,
+    "disabledMessage": "Nog niet beschikbaar",
+    "githubUrl": "https://github.com/Wipse/capellos",
     "videoUrl": null
   },
   {
