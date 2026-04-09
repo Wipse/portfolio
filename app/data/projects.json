@@ -5,7 +5,9 @@
     "description": "Persoonlijke portfolio site gebouwd met Nuxt 4, TailwindCSS en een grid-gebaseerde layout met scroll-driven animaties",
     "tags": ["Design", "Development"],
     "externalUrl": null,
-    "richContent": "Studio Wisse is mijn persoonlijke portfolio en speeltuin voor nieuwe technieken. De site is gebouwd met Nuxt 4 en TailwindCSS v4, met een grid-gebaseerde layout die op alle schermformaten goed werkt.\n\nBijzondere aandacht ging uit naar de animaties en interacties — van de scroll-driven projectenlijst tot de page transitions. Het project is ook een manier om de nieuwste webstandaarden zoals CSS scroll-driven animations en container queries te verkennen."
+    "disabledMessage": "Je kijkt er nu naar",
+    "githubUrl": "https://github.com/Wipse/portfolio",
+    "videoUrl": null
   },
   {
     "slug": "resonyl",
@@ -13,7 +15,9 @@
     "description": "Hobbyproject waarin ik de audio van mijn platenspeler met behulp van Creative Coding tot leven laat komen",
     "tags": ["Creative Coding"],
     "externalUrl": null,
-    "richContent": ""
+    "disabledMessage": "Zie video",
+    "githubUrl": "https://github.com/Wipse/resonyl",
+    "videoUrl": "/videos/demo.mp4"
   },
   {
     "slug": "capellos",
@@ -21,7 +25,9 @@
     "description": "Intern component library en design system voor Skeps, inclusief documentatie en Storybook integratie.",
     "tags": ["UX", "Design Systems"],
     "externalUrl": null,
-    "richContent": "Voor Skeps heb ik een intern design system opgezet dat door het hele team gebruikt wordt. Het systeem bestaat uit een component library gebouwd in Vue.js, gekoppeld aan een Storybook omgeving voor documentatie en visueel testen.\n\nHet design system bevat tokens voor kleur, typografie en spacing, en biedt een consistente basis voor alle producten die Skeps bouwt. De adoptie binnen het team verliep stapsgewijs, waarbij bestaande componenten werden gemigreerd naar het nieuwe systeem."
+    "disabledMessage": "Intern project",
+    "githubUrl": null,
+    "videoUrl": null
   },
   {
     "slug": "salve-onboarding",
@@ -29,7 +35,9 @@
     "description": "Afstudeerproject aan NHL Stenden Leeuwarden waarbij ik onderzoek deed naar de inzet van micro-interacties in e-commerce omgevingen.",
     "tags": ["Research", "Concepting", "Design", "Development"],
     "externalUrl": null,
-    "richContent": "Voor mijn afstuderen aan NHL Stenden Leeuwarden deed ik onderzoek naar de rol van micro-interacties in e-commerce omgevingen. De centrale vraag was: in hoeverre beïnvloeden micro-interacties de conversie en gebruikerstevredenheid in webshops?\n\nHet onderzoek combineerde literatuurstudie, gebruikerstests en een praktijkexperiment bij een bestaande webshop. De conclusies boden concrete aanbevelingen voor het inzetten van animaties en feedback-mechanismen om de gebruikerservaring te verbeteren."
+    "disabledMessage": "Staat niet meer online",
+    "githubUrl": "https://github.com/Wipse/salve-onboarding",
+    "videoUrl": null
   },
   {
     "slug": "voor-elkaar-plein",
@@ -37,6 +45,8 @@
     "description": "Community platform voor Gemeente Heerenveen waar inwoners organisaties en activiteiten in de buurt kunnen ontdekken. Gebouwd tijdens mijn stage bij Skeps.",
     "tags": ["Frontend", "Webdevelopment"],
     "externalUrl": "https://voorelkaarplein.nl",
-    "richContent": "Tijdens mijn stage bij Skeps heb ik meegewerkt aan het Voor Elkaar Plein platform voor Gemeente Heerenveen. Voor Elkaar Plein is een community platform voor Gemeente Opsterland waar inwoners en organisaties lokale diensten, activiteiten, evenementen en vacatures kunnen ontdekken.\n\nAls stagiair bij Skeps Internetbureau was dit project mijn grootste bezigheid, en heb ik dan ook (bijna) de volledige front-end uitgewerkt in Nuxt 3 (Vue 3) met TypeScript en Tailwind CSS. Het platform bevat onder andere een AI-gestuurde zoekfunctie via Typesense, interactieve kaarten met Mapbox, een uitgebreid componentsysteem met cards, carousels en formulieren, en meertalige ondersteuning via i18n. De applicatie is geoptimaliseerd voor SEO met ISR-caching en automatische sitemap-generatie."
+    "disabledMessage": null,
+    "githubUrl": null,
+    "videoUrl": null
   }
 ]
