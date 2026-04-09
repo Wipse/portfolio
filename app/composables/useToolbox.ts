@@ -74,7 +74,7 @@ export function useToolbox() {
     } else {
       gsap.to(title, {
         fontSize: "0.85rem",
-        opacity: 0.2,
+        opacity: 0.4,
         x: 8,
         duration: 0.35,
         ease: "power2.in",
@@ -105,10 +105,10 @@ export function useToolbox() {
       const isActive = activeIndex.value === j;
       const isHovered = j === i;
       if (isHovered && !isActive)
-        gsap.to(title, { opacity: 0.5, duration: 0.2, ease: "power2.out" });
+        gsap.to(title, { opacity: 0.65, duration: 0.2, ease: "power2.out" });
       else if (!isActive)
-        gsap.to(title, { opacity: 0.08, duration: 0.2, ease: "power2.out" });
-      else gsap.to(title, { opacity: 0.75, duration: 0.2, ease: "power2.out" });
+        gsap.to(title, { opacity: 0.2, duration: 0.2, ease: "power2.out" });
+      else gsap.to(title, { opacity: 0.85, duration: 0.2, ease: "power2.out" });
     });
   }
 
@@ -116,7 +116,7 @@ export function useToolbox() {
     titleRefs.value.forEach((title, j) => {
       if (!title) return;
       gsap.to(title, {
-        opacity: activeIndex.value === j ? 1 : 0.2,
+        opacity: activeIndex.value === j ? 1 : 0.4,
         duration: 0.2,
         ease: "power2.in",
       });
@@ -139,7 +139,7 @@ export function useToolbox() {
       const title = titleRefs.value[i];
       const detail = detailRefs.value[i];
       if (!title || !detail) return;
-      gsap.set(title, { fontSize: "0.85rem", opacity: 0.2, x: 8 });
+      gsap.set(title, { fontSize: "0.85rem", opacity: 0.4, x: 8 });
       gsap.set(detail, { height: 0, opacity: 0 });
     });
   });
